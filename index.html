@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">⚙️ DevOps</span>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Infraestrutura como Código</h1>
+    <p>Site hospedado na AWS S3 + CloudFront com pipeline CI/CD automatizada via GitHub Actions e análise de qualidade com SonarCloud.</p>
+    <a href="#stack" class="btn">Ver Stack</a>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre o Projeto</h2>
+    <p>Este site faz parte de um teste técnico de estágio DevOps. O objetivo é provisionar um site estático em nuvem pública com uma esteira CI/CD completa, desde o commit até o deploy automatizado.</p>
+  </section>
+
+  <section id="stack" class="section dark">
+    <h2>Stack Utilizada</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>☁️ AWS S3</h3>
+        <p>Armazenamento e hospedagem do site estático com alta disponibilidade.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 CloudFront</h3>
+        <p>CDN global da AWS para distribuição de conteúdo com baixa latência.</p>
+      </div>
+      <div class="card">
+        <h3>🔄 GitHub Actions</h3>
+        <p>Pipeline CI/CD automatizada disparada a cada push na branch main.</p>
+      </div>
+      <div class="card">
+        <h3>🔍 SonarCloud</h3>
+        <p>Análise de qualidade e segurança do código de forma contínua.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pipeline" class="section">
+    <h2>Fluxo da Pipeline</h2>
+    <div class="pipeline">
+      <div class="step">📝<br/>Commit</div>
+      <div class="arrow">→</div>
+      <div class="step">🔍<br/>SonarCloud</div>
+      <div class="arrow">→</div>
+      <div class="step">📦<br/>Build</div>
+      <div class="arrow">→</div>
+      <div class="step">🚀<br/>Deploy S3</div>
+      <div class="arrow">→</div>
+      <div class="step">🌐<br/>CloudFront</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Desenvolvido para o Teste Técnico de Estágio DevOps — IVORY IT</p>
+  </footer>
+</body>
+</html>
